@@ -1,12 +1,12 @@
-#PreReqs
+# PreReqs
 1.Node ... goto install Node
 1.angular cli
 
-##PreInstall
+## PreInstall
 
 * npm install -g @angular/cli
 
-#New project steps
+# New project steps
 
 * ng new udemy
 * cd udemy
