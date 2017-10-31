@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent implements OnInit {
+  myvar:string
+  myvar2:string
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  parseInput(event:Event){
+    console.log(event)
+    this.myvar2=(<HTMLInputElement>event.target).value+"!!"
   }
 
 }
