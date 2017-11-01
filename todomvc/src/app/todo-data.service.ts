@@ -19,6 +19,7 @@ export class TodoDataService {
     if (!todo.id) {
       todo.id = ++this.lastId;
     }
+    todo.date_created=new Date(); 
     this.todos.push(todo);
     return this;
   }
