@@ -54,3 +54,23 @@ e.g.
 [(ngModel)] =  appParam  # where appParam is a param on the componet that we want tostore the value in
 <input type="text" class="form-control" (input)="mymethod($event)"/>
 
+# Directives
+* Structural Directive. Means it changes the DOM
+1. ngIf. if statemnt.. 
+use *ngIf if you want the entire elment dependent on result of ngif. Otherwise elemnt will appear
+
+example
+ <p style="color: red" *ngIf="empty(); else myTag">*ngIf Display if empty() is true</p>
+  
+  <ng-template #myTag>
+      <p style="color: green">*ngIf empty() is false</p> 
+    </ng-template>  
+
+* Attribute directive
+
+1. ngStyle`
+1. ngClass. .display class if statement true.. Note do NOt explicitlyuse "if" put i>4 directly in
+    <p style="margin: 0px;" 
+    [ngStyle]="{color:getColor(i)}" 
+    [ngClass]="{five: i>4}" *ngFor="let log of updates;  let i = index"><small>{{i}}. {{log}}</small></p>
+1. ngFor, *ngFor

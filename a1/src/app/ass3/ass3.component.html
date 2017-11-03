@@ -1,0 +1,14 @@
+<hr/>
+<div class="container">
+  <h3>Ass3</h3>
+  <div class="row">
+      <div class="col">
+        <button class="btn btn-primary" (click)="buttonPress()">Display Details</button>
+      </div>
+
+      <div class="col">
+        <p *ngIf="buttonOn">Random text</p>
+      </div>
+    </div>
+  <p style="margin: 0px;" [ngStyle]="{color:getColor(i)}" [ngClass]="{five: i>4}" *ngFor="let log of updates;  let i = index"><small>{{i}}. {{log}}</small></p>
+</div>

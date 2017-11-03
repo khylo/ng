@@ -1,4 +1,11 @@
 # List
+1. List
+    List<Item>
+    progress <created, started, blocked, InProgress, complete>
+    status success, warn, fail.
+
+1. Item
+    Name, desc, createDate, updateDate, createdBy, updatedBy, version, category, level, priority, parent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 

@@ -1,0 +1,13 @@
+<p>
+  Username <input type="text" [(ngModel)]="username"/>
+  </p>
+  <p>
+  Name is {{this.username}} <button (click)="clear()" [disabled]="empty()">Clear Name</button>
+  </p>
+  <p style="color: red" *ngIf="empty(); else myTag">*ngIf Display if empty() is true</p>
+  
+  <ng-template #myTag>
+      <p style="color: green">*ngIf empty() is false</p> 
+    </ng-template>  
+
+    <p [ngStyle]="{backgroundColor:   getColor()}" > Random value in color</p>
