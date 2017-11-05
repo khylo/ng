@@ -1,9 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Hi from bootstrap!</h2>
-      <button class="btn btn primary">button</button>
-    </div>
+
+<app-header></app-header>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-6">
+            <app-shoplist>  </app-shoplist> 	
+            <app-shoplist-edit></app-shoplist-edit>
+            <app-ingredient></app-ingredient>
+        </div>
+        <div class="col-md-6">
+          <app-recipe-book></app-recipe-book>
+          <app-recipe-list></app-recipe-list>
+          <app-recipe-item></app-recipe-item>
+          <app-recipe-detail></app-recipe-detail>
+          <app-recipe></app-recipe>
+        </div> 
+      </div>
   </div>
-</div>
+      <button class="btn btn primary">button</button>
 
