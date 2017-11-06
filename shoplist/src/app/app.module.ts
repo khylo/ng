@@ -7,10 +7,10 @@ import { ShoplistEditComponent } from './shoplist-edit/shoplist-edit.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipeComponent } from './recipe/recipe.component';
-import { RecipeBookComponent } from './recipe-book/recipe-book.component';
-import { RecipeListComponent } from './recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './recipe-item/recipe-item.component';
+import { RecipeBookComponent } from './recipe/recipe-book/recipe-book.component';
+import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 
 @NgModule({
   declarations: [
