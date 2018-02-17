@@ -7,10 +7,6 @@
 
 # dependencies
 /node_modules
-node_modules/
-**/node_modules/**
-**\node_modules
-jspm_packages/
 
 # IDEs and editors
 /.idea
@@ -36,8 +32,6 @@ jspm_packages/
 npm-debug.log
 testem.log
 /typings
-# Typescript v1 declaration files
-typings/
 
 # e2e
 /e2e/*.js
@@ -46,15 +40,3 @@ typings/
 # System Files
 .DS_Store
 Thumbs.db
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
