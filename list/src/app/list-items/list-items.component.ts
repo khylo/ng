@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemComponent } from '../item/item.component';
 
 @Component({
   selector: 'app-list-items',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-items.component.css']
 })
 export class ListItemsComponent implements OnInit {
+  items: Array<ItemComponent> = [new ItemComponent("Item1", "me"), new ItemComponent("Item2", "You")]
 
   constructor() { }
 

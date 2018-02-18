@@ -12,15 +12,25 @@ export class ItemComponent implements OnInit {
   listId: number
   updateDate: Date
   createdBy: string
-  updatedBy:Date
+  updatedBy:string
   version:number
   category:string
   level:string
   priority:number
   //parent:ItemComponent
   parentid:number
-  
-  constructor() { }
+
+  constructor(name:string, user:string, category:string = "event", level:string = "normal" , priority:number = 100) {
+    this.name=name;
+    this.category=category;
+    this.level=level;
+    this.priority=priority;
+    this.createDate=new Date();
+    this.updateDate=new Date();
+    this.createdBy=user;
+    this.updatedBy=user;
+
+   }
 
   ngOnInit() {
   }
